@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+</head>
+<body>
+
+
+    <div class="app">
+        <h1>TODO App</h1>
+        <div id="addNew">
+            <span>Add New Task </span>
+            <i class="fas fa-plus"></i>
+        </div>
+        <h5>Tasks</h5>
+        <div id="tasks"></div>
+    </div>
+    <div class="popup-outer">
+    <form id="form">
+  
+      <div class="header">
+        <h5 id="title">Add New Task</h5>
+      </div>
+      <div class="modal-body">
+            <p>Task Title</p>
+            <input type="text"  id="textInput" />
+            <div id="msg"></div>
+            <br />
+            <p>Due Date</p>
+            <input type="date" id="dateInput" />
+            <br />
+            <p>Description</p>
+            <textarea id="textarea" cols="30" rows="5"></textarea>
+      </div>
+      <div class="modal-footer">
+        <button type="submit" id="add">Add</button>
+     
+  </div>
+</form>
+</div>
+    <script src="main.js"></script>
+</body>
+</html>
